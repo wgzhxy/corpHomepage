@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <deploy>
+        <!-- war 包里的资源是存在于 WEB-INF/classes 下，因此这里 src 则设置成 WEB-INF/classes， -->
+        <!-- 资源根目录，设置成 webroot -->
+        <mapping src="webroot " dest="home/src/main/webapp"/>
+        <!--<mapping src="WEB-INF/pages" dest="app/src/main/webapp/WEB-INF/pages/h5"/>
+        <mapping src="WEB-INF/pages" dest="app/src/main/webapp/WEB-INF/pages/reports"/>
+        <mapping src="WEB-INF/pages" dest="app/src/main/webapp/WEB-INF/pages/console"/>
+        <mapping src="WEB-INF/pages" dest="app/src/main/webapp/WEB-INF/pages/console/comm"/>-->
+    </deploy>
+    <plugins>
+        <plugin name="spring_plugin"></plugin>
+        <plugin name="ibatis_plugin"></plugin>
+        <plugin name="webx3_plugin"></plugin>
+        <plugin name="sofa_plugin"></plugin>
+    </plugins>
+</workspace>
